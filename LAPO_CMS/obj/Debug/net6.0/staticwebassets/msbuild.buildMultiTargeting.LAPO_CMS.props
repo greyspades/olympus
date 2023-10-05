@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LAPO_CMS.props" />
+</Project>
