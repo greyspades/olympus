@@ -32,7 +32,7 @@ public class SlideModel {
     [BsonElement("Actionbtn")]
     // public IFormFile? File { get; set; }
     public IFormFile? Image { get; set; }
-    public byte[]? ImageBytes { get; set; }
+    // public byte[]? ImageBytes { get; set; }
     public DateTime? CreationDate { get; set; }
     // public string? ActionString { get; set; }
     public string? Url { get; set; }
@@ -44,3 +44,8 @@ public class SlideModel {
 public class DeleteDto {
     public string? Id { get; set; }
 }
+
+// public class AdminDto {
+//     public string? Id { get; set; }
+//     public string? Password { get; set; }
+// }

@@ -13,6 +13,7 @@ C:\Users\LAPO Mfb\development\LAPO_CMS\LAPO_CMS\bin\Debug\net6.0\publish\Azure.C
 C:\Users\LAPO Mfb\development\LAPO_CMS\LAPO_CMS\bin\Debug\net6.0\publish\Azure.Identity.dll
 C:\Users\LAPO Mfb\development\LAPO_CMS\LAPO_CMS\bin\Debug\net6.0\publish\Dapper.dll
 C:\Users\LAPO Mfb\development\LAPO_CMS\LAPO_CMS\bin\Debug\net6.0\publish\DnsClient.dll
+C:\Users\LAPO Mfb\development\LAPO_CMS\LAPO_CMS\bin\Debug\net6.0\publish\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\LAPO Mfb\development\LAPO_CMS\LAPO_CMS\bin\Debug\net6.0\publish\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\LAPO Mfb\development\LAPO_CMS\LAPO_CMS\bin\Debug\net6.0\publish\Microsoft.Data.SqlClient.dll
 C:\Users\LAPO Mfb\development\LAPO_CMS\LAPO_CMS\bin\Debug\net6.0\publish\Microsoft.Extensions.Logging.Abstractions.dll

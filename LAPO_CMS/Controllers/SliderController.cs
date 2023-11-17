@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,31 +21,32 @@ namespace SliderController
             _config = config;
             _repo = repo;
         }
-
+        
         [HttpGet]
+        // [Authorize]
         public async Task<ActionResult> GetSlides()
         {
             try
             {
                 var data = await _repo.GetAllSlides();
 
-                foreach (SlideModel slide in data)
-                {
-                    var imagePath = @$"images/slides/{slide.Id}.jpg"; // Replace with your image path.
-                    var contentType = "image/jpeg"; // Set the appropriate content type.
+                // foreach (SlideModel slide in data)
+                // {
+                //     var imagePath = @$"images/slides/{slide.Id}.jpg"; // Replace with your image path.
+                //     var contentType = "image/jpeg"; // Set the appropriate content type.
 
-                    byte[] imageData;
-                    using (FileStream imageStream = new(imagePath, FileMode.Open, FileAccess.Read))
-                    using (MemoryStream memoryStream = new())
-                    {
-                        imageStream.CopyTo(memoryStream);
-                        slide.ImageBytes = memoryStream.ToArray();
-                    }
-                    // slide.ActionBtn = JsonSerializer.Deserialize<ActionButtonModel>(slide.ActionString);
-                    // var test = JsonSerializer.Deserialize<ActionButtonModel>(slide.ActionString);
-                    // Console.WriteLine(test.Display);
-                    // Console.WriteLine(test.Display);
-                }
+                //     byte[] imageData;
+                //     using (FileStream imageStream = new(imagePath, FileMode.Open, FileAccess.Read))
+                //     using (MemoryStream memoryStream = new())
+                //     {
+                //         imageStream.CopyTo(memoryStream);
+                //         slide.ImageBytes = memoryStream.ToArray();
+                //     }
+                //     // slide.ActionBtn = JsonSerializer.Deserialize<ActionButtonModel>(slide.ActionString);
+                //     // var test = JsonSerializer.Deserialize<ActionButtonModel>(slide.ActionString);
+                //     // Console.WriteLine(test.Display);
+                //     // Console.WriteLine(test.Display);
+                // }
 
                 var response = new
                 {
@@ -75,6 +77,7 @@ namespace SliderController
         }
         // [DisableCors]
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult> CreateSlide([FromForm] SlideModel payload)
         {
             try
@@ -120,6 +123,7 @@ namespace SliderController
         }
 
         [HttpPost("update")]
+        [Authorize]
         public async Task<ActionResult> UpdateSlide([FromForm] SlideModel payload)
         {
             try
@@ -155,6 +159,7 @@ namespace SliderController
         }
 
         [HttpPost("delete")]
+        [Authorize]
         public async Task<ActionResult> DeleteSlide(DeleteDto payload)
         {
             try

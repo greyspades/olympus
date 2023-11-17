@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yBJi/EZyC7GCqBkgZpmWKbDbwUVZY+eotJX7sT2TdJAh6E93gNSJhnuOM+nq0Bjpp9/yJF7nJwClkRW15pmglg==",
+  "dgSpecHash": "l1wbg3YVihNPNRxgrbRMJ7AaZQUf7jKJLDCcD4I0b2G7ThFsIY3U9V4hrj5SiRNF09U2/p554iu4pY+Uvlv8VA==",
   "success": true,
   "projectFilePath": "C:\\Users\\LAPO Mfb\\development\\LAPO_CMS\\LAPO_CMS\\LAPO_CMS.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\LAPO Mfb\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\LAPO Mfb\\.nuget\\packages\\dapper\\2.0.151\\dapper.2.0.151.nupkg.sha512",
     "C:\\Users\\LAPO Mfb\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\LAPO Mfb\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.4\\microsoft.aspnetcore.authentication.jwtbearer.6.0.4.nupkg.sha512",
     "C:\\Users\\LAPO Mfb\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\LAPO Mfb\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\LAPO Mfb\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
